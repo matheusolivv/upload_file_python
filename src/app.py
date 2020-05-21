@@ -16,7 +16,7 @@ def index():
 
 @app.route("/upload", methods=["POST"])
 def upload():
-    folder_name = request.form['superhero']
+    folder_name = 'files'
     '''
     # this is to verify that folder to upload to exists.
     if os.path.isdir(os.path.join(APP_ROOT, 'files/{}'.format(folder_name))):
