@@ -1,0 +1,10 @@
+version: '3'
+services:
+  upload_file_python:
+    build: .
+    image: upload_file_python
+    container_name: upload_file_python 
+    ports:
+      - 4555:4555
+    volumes:
+      - /opt/upload_file_python/files:/app/src/files
