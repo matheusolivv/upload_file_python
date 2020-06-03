@@ -7,4 +7,4 @@ services:
     ports:
       - 4555:4555
     volumes:
-      - /opt/upload_file_python/files:/app/src/files
+      - ./src/files:/app/src/files
